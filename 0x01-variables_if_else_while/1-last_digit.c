@@ -1,7 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-/* main - main block
+/**
+ *  main - main block
  * Description: Get a random number and check its last digit, compare it with 5
  * Return: 0
  */
@@ -16,7 +17,7 @@ int main(void)
 		n = rand() - RAND_MAX / 2;
 		last = n % 10;
 		if (last > 5)
-			printf("last diget of %i is %i and is greater than 5\n", n, last);
+			printf("Last digit of %i is %i and is greater than 5\n", n, last);
 		else if (last == 0)
 			printf("Last digit of %i is %i and is 0\n", n, last);
 		else if (last < 6)
