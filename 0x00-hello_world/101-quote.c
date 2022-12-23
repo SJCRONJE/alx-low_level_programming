@@ -18,5 +18,5 @@ int main(void)
 	strcpy(string, str2);
 	write(2, string, sizeof(string));
 
-	return (1);
+return (1);
 }
