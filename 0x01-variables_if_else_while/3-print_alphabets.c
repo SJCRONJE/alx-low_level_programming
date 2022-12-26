@@ -5,7 +5,6 @@
   * Description:printing alphabets in lowercase
   * Return: Return
   */
-
 int main(void)
 {
 	int ch, CH;
