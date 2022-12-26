@@ -7,25 +7,22 @@
  */
 int main(void)
 {
-	int i, j, k;
-	int counter;
+	int i;
+	unsigned long f1 = 0, f2 = 1, s;
 
-	i = 1;
-	j = 1;
-	k = 0;
-
-	for (counter = 0; counter < 52; counter++)
+	for (i = 0; i < 50; i++)
 	{
-		if (counter == 51)
-			printf("%i\n", i);
+		s = f1 + f2;
+		printf("lu%", s);
 
+		f1 = f2;
+		f2 = s;
+
+		if (i == 49)
+			printf("\n");
 		else
-		{
-			printf("%i, ", i);
-			k = i + j;
-			j = i;
-			i = k;
-		}
+			printf(", ");
 	}
+
 	return (0);
 }
