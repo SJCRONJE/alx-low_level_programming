@@ -1,28 +1,19 @@
 #include <stdio.h>
-/**
- * main - main block
- * Description: print the alphabet in lower case
- * and the in uppercase
- * Return: 0
- */
-int main(void)
+
+ /**
+  * main - main function
+  * Description:printing alphabets in lowercase
+  * Return: Return
+  */
+
+ int main(void)
 {
-	char c = 'a';
-	
-	while (c <= 'z')
-	{
-		putchar(c);
-		c++;
-	}
+	int ch, CH;
 
-	c = 'A';
-
-	while (c <= 'Z')
-	{
-		putchar(c);
-		c++;
-	}
-
+	for (ch = 'a'; ch <= 'z'; ch++)
+		putchar(ch);
+	for (CH = 'A'; CH <= 'Z'; CH++)
+		putchar(CH);
 	putchar('\n');
 	return (0);
 }
