@@ -28,7 +28,7 @@ void print_name_uppercase(char *name)
 		{
 			putchar(name[i] + 'A' - 'a');
 		}
-		elsel
+		else
 		{
 			putchar(name[i]);
 		}
