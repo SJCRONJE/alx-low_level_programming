@@ -4,19 +4,12 @@
 #include <unistd.h>
 
 /**
- * main - main function
- * Return: 1
- */
+ * main - main function entry point
+ * Return: Always 1 (Success)
+*/
 int main(void)
 {
-	char *string;
-	char str1[] = "and that piece of art is useful\"";
-	char str2[] = "- Dora Korpar, 2015-10-2019";
-
-	string = malloc(strlen(str1) + strlen(str2) + 1);
-	strcpy(string, str1);
-	strcpy(string, str2);
-	write(2, string, sizeof(string));
-
-return (1);
+	write(2,
+	"and that piece of art is useful\" - Dora Korpar, 2015-10-19\n", 59);
+	return (1);
 }
