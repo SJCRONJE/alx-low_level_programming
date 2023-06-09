@@ -1,33 +1,34 @@
 #include <stdio.h>
 
 /**
- * main - prints 00-99
- * Description: We can only use putchar function
- * Return: 0
+ * main - prints all possible combinations of two two-digit numbers
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
-	int n;
-	int z;
+	int i, j;
 
-	for (n = 0; n <= 9; n++)
+	for (i = 0; i < 100; i++)
 	{
-		z = 0;
-		for (z = 0; z <= 9; z++)
+		for (j = 0; j < 100; j++)
 		{
-			putchar('0' + n);
-			putchar('0' + z);
-			if (n == 9 && z == 9)
+			if (i < j)
 			{
-				putchar('\n');
-			}
-			else
-			{
-				putchar(44);
+				putchar((i / 10) + 48);
+				putchar((i % 10) + 48);
 				putchar(' ');
+				putchar((j / 10) + 48);
+				putchar((j % 10) + 48);
+				if (i != 98 || j != 99)
+				{
+					putchar(',');
+					putchar(' ');
 				}
+			}
+
 		}
 	}
-
+	putchar('\n');
 	return (0);
 }
+
