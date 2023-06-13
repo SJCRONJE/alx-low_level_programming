@@ -27,3 +27,7 @@ int main(void)
 	putchar('\n');
 	return (0);
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> c1724afd1815333354bf82fe876a84a9f0cd9324
