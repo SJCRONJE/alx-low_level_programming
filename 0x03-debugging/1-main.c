@@ -6,6 +6,7 @@
 int main(void)
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
 int i;
 printf("Infinite loop incoming :(\n");
 i = 0;
@@ -17,6 +18,9 @@ printf("Infinite loop avoided! \\o/\n");
 return (0);
 =======
 	int = i;
+=======
+	int i;
+>>>>>>> 59e6bb40a2db33923177fa180aa7975a30694d40
 
 	printf("Infinite loop incoming :(\n");
 
